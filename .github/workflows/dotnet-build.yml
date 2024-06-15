@@ -8,16 +8,7 @@ on:
   schedule:
     - cron: '0 1 * * *'
 
-jobs:
-lint:
-    name: Lint Code Base
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: github/super-linter@v3
-      with:
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+jobs:s
   build:
     name: Building app
     runs-on: ubuntu-latest
